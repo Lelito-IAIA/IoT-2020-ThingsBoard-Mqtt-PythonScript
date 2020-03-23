@@ -17,12 +17,17 @@ The virtual environment stations, at regular intervals, sends the following data
 For the completion of the asssignament is sufficient the use of demo thingsboard that offers the use of a MQTT broker, the creation of public devices and public dashboards for the visualization of the data .
 
 ##  Web-based Dashboard
-https://demo.thingsboard.io/dashboard/ea77c970-6c6f-11ea-8e0a-7d0ef2a682d3?publicId=8ff07230-6a27-11ea-ad02-b3576b7d39f1
+
+Link to Public Dashboard
+>https://demo.thingsboard.io/dashboard/ea77c970-6c6f-11ea-8e0a-7d0ef2a682d3?publicId=8ff07230-6a27-11ea-ad02-b3576b7d39f1
+
 ## Hands-on Tutorial
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+Link to Blog Post in Linkedin: 
+>link
 
 ## Video Demonstration
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+Link to video demonstration on Youtube:
+>link
 
