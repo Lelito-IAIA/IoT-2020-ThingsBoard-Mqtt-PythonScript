@@ -1,5 +1,5 @@
 #Library import
-import paho.mqtt.client as paho  		                 #Import of mqtt library
+import paho.mqtt.client as paho  		                 #Import of paho-mqtt library
 import time                                                      #Import of time library
 import random as rnd                                             #Import of random library
  
