@@ -29,5 +29,5 @@ Link to Blog Post in Linkedin:
 ## Video Demonstration
 
 Link to video demonstration on Youtube:
->https://www.youtube.com/watch?v=4d8StNCNQpM&feature=youtu.be
+>http://ichatz.me/Site/InternetOfThings2020-Assignment1
 
