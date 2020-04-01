@@ -38,6 +38,14 @@ DEVELHELP ?= 1
 # CFLAGS += -DGNRC_RPL_DODAG_CONF_OPTIONAL_ON_JOIN
 
 # Change this to 0 show compiler invocation lines by default:
+
+#
 QUIET ?= 1
+#add the driver lps331ap
+DRIVER ?= lps331ap
+#include the pakage that allow you to use the driver adn the xtimer
+USEMODULE += $(DRIVER)
+USEMODULE += xtimer
+
 
 include $(RIOTBASE)/Makefile.include
