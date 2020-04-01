@@ -11,6 +11,13 @@ The virtual environment stations, at regular intervals, sends the following data
 >4.  wind intensity (0 ... 100 m/s)
 >5.  rain height (0 ... 50 mm / h)
 
+
+## RBSM by mosquitto
+
+
+## MQTT-SN/MQTT transparent bridge
+
+
 ## ThingsBoard
 
 [ThingsBoard](https://thingsboard.io) is an open-source IoT platform for data collection, processing, visualization, and device management. MQTT is a lightweight publish-subscribe messaging protocol which probably makes it the most suitable for various IoT devices. ThingsBoard server nodes act as an MQTT Broker that supports QoS levels 0 (at most once) and 1 (at least once) and a set of predefined topics.
