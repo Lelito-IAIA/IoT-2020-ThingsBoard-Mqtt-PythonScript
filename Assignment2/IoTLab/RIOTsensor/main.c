@@ -74,8 +74,8 @@ static unsigned get_qos(const char *str)
     }
 }
 
-void sensor(char* payload)
-{
+void sensor(char* payload)                                                              //Function that read the value
+{                                                                                       //of the real sensor
     lpsxxx_t dev;
 
     printf("Test application for %s pressure sensor\n\n", LPSXXX_SAUL_NAME);
@@ -89,7 +89,7 @@ void sensor(char* payload)
     int16_t temp;
     while (1) {
         lpsxxx_enable(&dev);
-        xtimer_sleep(1); /* wait a bit for the measurements to complete */
+        xtimer_sleep(1);                                                   /* wait a bit for the measurements to complete */
 
         lpsxxx_read_temp(&dev, &temp);
         lpsxxx_read_pres(&dev, &pres);
@@ -98,7 +98,7 @@ void sensor(char* payload)
         int temp_abs = temp / 100;
         temp -= temp_abs * 100;
 
-        sprintf(payoff,"{\"Temperature\":\"%i Celsius\",\"Pressure\":\"%i °C\n\"}",temp,pres);
+        sprintf(payoff,"{\"Temperature\":\"%i Celsius\",\"Pressure\":\"%i °C\n\"}",temp,pres);      //Print the payload
         printf("Pressure value: %ihPa - Temperature: %2i.%02i°C\n",
                pres, temp_abs, temp);
     }
@@ -174,7 +174,7 @@ static int cmd_pub(int argc, char **argv)
     
     char* topic = "devices/vs1";
     char payload[400];
-    sens(payload);
+    sens(payload);                                                                              //Generating payload
 
     printf("pub with topic: %s and name %s and flags 0x%02x\n", topic, payload, (int)flags);
 
