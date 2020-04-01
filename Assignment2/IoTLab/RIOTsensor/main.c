@@ -161,7 +161,7 @@ static int cmd_discon(int argc, char **argv)
     puts("Disconnect successful");
     return 0;
 }
-//Publishing a random payload
+//Publishing a sensor's payload
 static int cmd_pub(int argc, char **argv)
 {
     emcute_topic_t t;
@@ -288,7 +288,7 @@ static int cmd_will(int argc, char **argv)
 static const shell_command_t shell_commands[] = {
     { "con", "connect to MQTT broker", cmd_con },
     { "discon", "disconnect from the current broker", cmd_discon },
-    { "pub_values", "publish random values", cmd_pub },
+    { "pub_values", "publish sensor values", cmd_pub },
     { "sub", "subscribe topic", cmd_sub },
     { "unsub", "unsubscribe from topic", cmd_unsub },
     { "will", "register a last will", cmd_will },
