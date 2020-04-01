@@ -1,1 +1,2 @@
-##MQTT-SN/MQTT transparent bridge
+## MQTT-SN/MQTT transparent bridge
+To implement this bridge you need to create a python script that implements two MQTT-SN clients and an MQTT client. The MQTT-SN clients connect to the RBSM broker by subscribe to the topic of the virtual environment station of interest and when a payload is published on the broker in that topic by the RIOT-OS app, a callback is called to the MQTT client which sends payload to the right thingsboard device.
