@@ -35,7 +35,7 @@ Link to Public Dashboard
 
 ## Hands-on Tutorial
 Link to Blog Post in Linkedin: 
->link
+>https://www.linkedin.com/pulse/hands-on-tutorial-sending-virtual-environment-station-iaia-1f/?published=t
 
 ## Video Demonstration
 Link to video demonstration on Youtube:
