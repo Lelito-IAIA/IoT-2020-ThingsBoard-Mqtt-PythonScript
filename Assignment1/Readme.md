@@ -1,7 +1,7 @@
 # First Assignment 
 This project is the my solution for the [First Assignment](http://ichatz.me/Site/InternetOfThings2020-Assignment1) of the IoT course in Sapienza University. It consist to create a cloud-based IoT system that collects information from a set of virtual environmental sensors using the MQTT protocol displaying the data collected from the sensors on a public web site.
 
-# Python Script
+## Python Script
 To simulate the virtual environment stations, which represents the MQTT client, a python script has been created. to develop the script you need to install the [ paho-mqtt library](https://pypi.org/project/paho-mqtt/), it provides a client class which enable applications to connect to an [MQTT](http://mqtt.org/) broker to publish messages, and to subscribe to topics and receive published messages.
 The virtual environment stations, at regular intervals, sends the following data to the broker:
 > 1.  temperature (-50 ... 50 Celsius)
