@@ -40,7 +40,3 @@ Link to Blog Post in Linkedin:
 ## Video Demonstration
 Link to video demonstration on Youtube:
 >link
-
-
-
-
