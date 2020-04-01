@@ -156,9 +156,9 @@ static int cmd_pub(int argc, char **argv)
         flags |= get_qos(argv[3]);
     }
     while(true){
-        char* topic = "devices/vs1";
-        char payload[400];
-        get_payload(payload);
+        char* topic = "devices/vs1";                                                        //Topic for the second virtual environment station
+        char payload[400];                                                                  //Initializing the payload
+        get_payload(payload);                                                               //Getting the payload
 
         printf("pub with topic: %s and name %s and flags 0x%02x\n", topic, payload, (int)flags);
 
