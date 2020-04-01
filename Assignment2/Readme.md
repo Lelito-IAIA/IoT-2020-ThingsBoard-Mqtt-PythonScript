@@ -12,7 +12,7 @@ The virtual environment stations, at regular intervals, sends the following data
 >5.  rain height (0 ... 50 mm / h)
 
 
-## RBSM by mosquitto
+## RBSM by Mosquitto
 The Really Small Message Broker is a server implementation of the MQTT and MQTT-SN protocols. Any client that implements this protocol properly can use this server for sending and receiving messages.
 
 The main reason for using RSMB over the main Mosquitto codebase is that Mosquitto doesn't currently have support for the MQTT-SN protocol.
