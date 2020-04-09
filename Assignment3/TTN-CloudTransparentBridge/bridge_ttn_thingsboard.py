@@ -1,27 +1,26 @@
-import mqtt_client as TB_client
+import mqtt_client as TB_client                                             #Import of mqtt_client.py
 import os.path
 import json
 import base64
-import paho.mqtt.client as mqtt
+import paho.mqtt.client as mqtt                                             #Import of paho.mqtt.client
 
 
-#connect to the MQTT ThingsBoard broker
-#print("connecting to the online MQTT broker")
+#Connect to the MQTT ThingsBoard broker
 tb_client = TB_client.MQTT_client()
 
 # Defines global variables
-USERNAME = 'lora-iotlab-ttn'
-PASSWORD = 'ttn-account-v2.8X-ANssFHF9UbH5QIhJ9kwdoc6-NSSSfI_oepWfNXY0'
-DEVICE_ID1 = 'iotlab-node'
-DEVICE_ID2 = 'iotlab-node2'
+USERNAME = 'lora-iotlab-ttn'                                                #Application Username
+PASSWORD = 'ttn-account-v2.8X-******************************************'   #Application ACCESS KEY
+DEVICE_ID1 = 'iotlab-node'                                                  #Device-ID 1
+DEVICE_ID2 = 'iotlab-node2'                                                 #Device-ID 1
 
-TTN_BROKER_ADDR = 'eu.thethings.network'
-TTN_BROKER_PORT = 8883
+TTN_BROKER_ADDR = 'eu.thethings.network'                                    #TTN Broker address
+TTN_BROKER_PORT = 8883                                                      #TTN Broker port
 
-SUBSCRIBE_TOPIC1 = '{}/devices/{}/up'.format(USERNAME, DEVICE_ID1)
+SUBSCRIBE_TOPIC1 = '{}/devices/{}/up'.format(USERNAME, DEVICE_ID1)          #TOPIC device 1
 PUBLISH_TOPIC1 = '{}/devices/{}/down'.format(USERNAME, DEVICE_ID1)
 
-SUBSCRIBE_TOPIC2 = '{}/devices/{}/up'.format(USERNAME, DEVICE_ID2)
+SUBSCRIBE_TOPIC2 = '{}/devices/{}/up'.format(USERNAME, DEVICE_ID2)          #TOPIC device 2
 PUBLISH_TOPIC2 = '{}/devices/{}/down'.format(USERNAME, DEVICE_ID2)
 
 def on_connect(client, userdata, flags, rc):
@@ -55,8 +54,8 @@ def on_message(client, userdata, msg):
           " - channel: {frequency}\n"
           " - coding rate: {coding_rate}".format(**data['metadata']))
 
-    #publish payload to ThingsBoard MQTT broker 
-    if msg.topic == "lora-iotlab-ttn/devices/iotlab-node/up" :
+    #Publish payload to ThingsBoard MQTT broker
+    if msg.topic == "lora-iotlab-ttn/devices/iotlab-node/up" :      #if statement determining the origin of the payload
         print ("VS1")
         tb_client.publish1(payload)
     else:
