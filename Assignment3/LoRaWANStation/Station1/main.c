@@ -47,7 +47,7 @@ static void sender(void)
         /* sleep 20 secs */
         xtimer_sleep(20);
 
-        /* Generating the payload with random values */
+        /* Preparing the payload with random values */
        
         char payload[400];
         get_payload(payload);
