@@ -11,4 +11,4 @@ insert in the same folder mqtt_client.py and soakjfaksfj.py
  and start from command line bridge_ttn_thingsboard.py
  
 
-    python bridge_ttn_thingsboard.py
+    $ python bridge_ttn_thingsboard.py
