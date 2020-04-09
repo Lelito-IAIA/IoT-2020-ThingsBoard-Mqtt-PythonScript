@@ -28,7 +28,7 @@ static hts221_t hts221;
 /* Device and application informations required for OTAA activation */
 static const uint8_t deveui[LORAMAC_DEVEUI_LEN] = { 0x00, 0xF8, 0xBF, 0x01, 0x90, 0x80, 0x2A, 0x9E };
 static const uint8_t appeui[LORAMAC_APPEUI_LEN] = { 0x70, 0xB3, 0xD5, 0x7E, 0xD0, 0x02, 0xD4, 0x49 };
-static const uint8_t appkey[LORAMAC_APPKEY_LEN] = { 0xF5, 0xAA, 0xF6, 0x11, 0xC7, 0x57, 0x39, 0xC8, 0x59, 0x50, 0xA7, 0xD7, 0xF7, 0x17, 0x27, 0x1E };
+static const uint8_t appkey[LORAMAC_APPKEY_LEN] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, };                  //Personal device appkey 
 
 //Generating Random Values
 int get_random(int min, int max) { 
@@ -51,26 +51,14 @@ void get_payload(char* payload){
 static void sender(void)
 {
     while (1) {
-        //char message[32];
+       
         /* sleep 20 secs */
         xtimer_sleep(20);
 
-        /* do some measurements */
-        //uint16_t humidity = 0;
-        //int16_t temperature = 0;
+       /* Generating the payload with random values */
         char payload[400];
         get_payload(payload);
-        /*if (hts221_read_humidity(&hts221, &humidity) != HTS221_OK) {
-            puts(" -- failed to read humidity!");
-        }
-        if (hts221_read_temperature(&hts221, &temperature) != HTS221_OK) {
-            puts(" -- failed to read temperature!");
-        }
-            
-        sprintf(message, "H: %u.%u, T:%u.%u",
-                (humidity / 10), (humidity % 10),
-                (temperature / 10), (temperature % 10));
-        */
+        
         printf("Sending data: %s\n", payload);
 
         /* send the LoRaWAN message */
