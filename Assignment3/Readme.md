@@ -37,8 +37,8 @@ Link to Public Dashboard
 
 ## Hands-on Tutorial
 Link to Blog Post in Linkedin: 
->link
+>https://www.linkedin.com/pulse/publish-sensor-values-thethingsnetwork-via-lorawan-show-iaia/?published=t
 
 ## Video Demonstration
 Link to video demonstration on Youtube:
->link
+>https://www.youtube.com/watch?v=sfrhkkbTxk8&t=11s
