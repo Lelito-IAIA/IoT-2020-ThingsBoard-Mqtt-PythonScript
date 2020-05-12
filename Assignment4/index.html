@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Activity Recognition</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Emanuele">
+  <meta charset="UTF-8">
+</head>
+<body>
+    <h1 style="text-align: center;"><strong>User Activity Recognition</strong></h1>
+    <h2>You are:</h2>
+    <div id="result" onload="testDeviceOrientation()">
+    </div>
+  
+   <h4>Data Sensor</h4>
+    <table>
+      <tr><td>X</td><td id="motionX">0</td></tr>
+      <tr><td>Y</td><td id="motionY">0</td></tr>
+      <tr><td>Z</td><td id="motionZ">0</td></tr>
+      <tr><td>Overall</td><td id="motionOveral">0</td></tr>
+
+    </table>
+    <div>
+      <h2><a href = "https://demo.thingsboard.io:/dashboard/f8545be0-9464-11ea-bec0-8bb99e4f8c3a?publicId=8ff07230-6a27-11ea-ad02-b3576b7d39f1">Dashboard</a>
+      </h2>
+    </div>
+  <script type="text/javascript" src="accelerometer.js"></script>
+
+</body>
+</html>
+<style type="text/css">
+  body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+  }
+  #result {
+    background-color: #63A030;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  table {  
+    color: #333;
+    border-collapse: 
+    collapse; border-spacing: 0; 
+  }
+
+  td, th {  
+      border: 1px solid transparent;
+      height: 30px; 
+      width: 100px;
+      transition: all 0.1s;
+  }
+
+  td {
+    height: 25px;
+  }
+  #body {
+    display: none;
+  }
+
+  th {  
+      background: #DFDFDF;
+      font-weight: bold;
+  }
+
+  td {  
+      background: #FAFAFA;
+      text-align: center;
+  }
+
+</style>
