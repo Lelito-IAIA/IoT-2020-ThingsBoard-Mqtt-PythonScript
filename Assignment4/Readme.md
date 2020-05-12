@@ -27,3 +27,21 @@ While access to accelerometer and gyro sensors might not seem as important to re
 iOS does not seem to be compatible with the Generic sensor API but uses another interface to manage the sensors [Motion and Orientation Sensors](https://www.w3.org/TR/motion-sensors/#biblio-generic-sensor) that extends the Generic Sensor API to expose a class of low-level and fusion sensors.
 
 To make up for this lack I added the request for permissions to Felix Krause's code on User Activity Recognition. He is a developer at Google and he demonstrated a proof of concept of how a user’s activity can be determined based on the data coming from acceleration and gyro sensors, using the older APIs.
+
+## WebApp
+### Generic Sensor API
+>https://lelito-iaia.github.io/IoT-Assignments/Assignment4/
+
+### Motion and Orientation Sensors (iOS - Felix Krause)
+>https://lelito-iaia.github.io/IoT-Assignments/Assignment4/user.acrivity.motionAndOrientation/
+
+## Dashboard
+Link to the public dashboard
+> https://demo.thingsboard.io/dashboard/f8545be0-9464-11ea-bec0-8bb99e4f8c3a?publicId=8ff07230-6a27-11ea-ad02-b3576b7d39f1
+
+## Hands-on Tutorial
+Link to Blog Post in Linkedin: 
+>
+## Video Demonstration
+Link to video demonstration on Youtube:
+>
