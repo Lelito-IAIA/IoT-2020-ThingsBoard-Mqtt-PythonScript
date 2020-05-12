@@ -21,6 +21,8 @@
     let movement = 0;
     let isMoving = false
     if (isMobile != null) {
+      document.getElementById("qr").style.display = 'none';
+
       let sensor = new LinearAccelerationSensor({frequency: 1});
       sensor.start();
 
