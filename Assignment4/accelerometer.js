@@ -65,6 +65,7 @@
       setInterval(updateStatus, 100)
     } else {
       setStatus("Please open this site on your smartphone")
+      document.getElementById("qr").style.display = 'block';
       document.getElementById("chances").style.display = 'none';
     }
 sensor.onerror = event => console.log(event.error.name, event.error.message);
