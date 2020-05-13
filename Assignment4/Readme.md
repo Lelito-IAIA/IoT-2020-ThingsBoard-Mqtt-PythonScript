@@ -40,7 +40,7 @@ Link to the public dashboard
 
 ## Hands-on Tutorial
 Link to Blog Post in Linkedin: 
->
+>https://www.linkedin.com/pulse/crowd-sensing-webapp-emanuele-santo-iaia/
 ## Video Demonstration
 Link to video demonstration on Youtube:
 > https://youtu.be/UJdQXGra_4Y
