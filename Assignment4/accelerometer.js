@@ -2,6 +2,7 @@
     var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android)/); 
     let movement = 0;
     let isMoving = false
+    //if the user is using a mobile it will have the Accelerometer sensor
     if (isMobile != null) {
       document.getElementById("qr").style.display = 'none';
       //LinearAccelerationSensor is subclass of Accelerometer, and measures acceleration applied to 
@@ -10,6 +11,11 @@
       //starting the sensor
       sensor.start();
       //on reading function
+
+      function setStatus(status) {
+        document.getElementById("result").textContent = status
+      }
+
       sensor.onreading = () => {
         let x = sensor.x
         let y = sensor.y
@@ -26,8 +32,10 @@
         //sending the movement status to html row "motionOverall" of the table
         document.getElementById("motionOveral").textContent = movement.toFixed(2)
 
-        //If the vector is less then a threshold (i.e. 0.5) the user is sitting or standing
+        //If the vector is less then a threshold (i.e. 0.6) the user is sitting or standing
         //instead if the vector length is more then a threshold the user is **walking** 
+        document.getElementById("motionOveral").textContent = movement.toFixed(2)
+
         if (movement > 0.6) {
           setStatus("Walking")
           isMoving = true
