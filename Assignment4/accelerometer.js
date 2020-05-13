@@ -44,7 +44,7 @@
         
 
         document.getElementById("motionOveral").textContent = movement.toFixed(2)
-        if (movement > 0.5) {
+        if (movement > 0.6) {
           setStatus("Walking")
           isMoving = true
         } else {
