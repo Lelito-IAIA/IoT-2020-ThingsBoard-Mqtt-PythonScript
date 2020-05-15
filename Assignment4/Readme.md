@@ -32,7 +32,7 @@ To make up for this lack I added the request for permissions to Felix Krause's c
 >https://lelito-iaia.github.io/IoT-Assignments/Assignment4/
 
 ### Motion and Orientation Sensors (iOS - Felix Krause)
->https://lelito-iaia.github.io/IoT-Assignments/Assignment4/user.acrivity.motionAndOrientation/
+>https://lelito-iaia.github.io/IoT-Assignments/Assignment4/user.activity.motionAndOrientation/
 
 ## Dashboard
 Link to the public dashboard
